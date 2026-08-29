@@ -1,0 +1,38 @@
+{
+	"schemaVersion": 1,
+	"id": "better_gardening",
+	"version": "${version}",
+	"name": "Better Gardening",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/better_gardening/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.justin.better_gardening.BetterGardening"
+		],
+		"client": [
+			"com.justin.better_gardening.client.BetterGardeningClient"
+		]
+	},
+	"mixins": [
+		"better_gardening.mixins.json",
+		{
+			"config": "better_gardening.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": "~26.2",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
