@@ -13,6 +13,7 @@ repositories {
 
 loom {
 	splitEnvironmentSourceSets()
+	accessWidenerPath = file("src/main/resources/better_gardening.accesswidener")
 
 	mods {
 		"better_gardening" {

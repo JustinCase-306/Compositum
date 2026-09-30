@@ -14,7 +14,7 @@ import org.slf4j.LoggerFactory;
 import com.justin.better_gardening.block.AdvancedComposterBlock;
 
 public class BetterGardening implements ModInitializer {
-	public static final String MOD_ID = "better_gardening";
+	public static final String MOD_ID = "better_gardening.accesswidener";
 
 	// This logger is used to write text to the console and the log file.
 	// It is considered best practice to use your mod id as the logger's name.
